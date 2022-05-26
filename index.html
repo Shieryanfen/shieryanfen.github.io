@@ -76,18 +76,18 @@
       {{/if}}
       </p>
       <div class="extra-data">
-      <div class="tooltip-header">Description</div>
+      <div class="tooltip-header">描述</div>
       <div class="tooltip-content" style="max-width:320px">{{:description}}</div>
       {{if weight_modifiers.length > 0}}
-          <div class="tooltip-header">Weight Modifiers</div>
+          <div class="tooltip-header">权重修正</div>
           <div class="tooltip-content"><pre>{{:weight_modifiers.join('<br/>')}}</pre></div>
       {{/if}}
       {{if potential.length > 0}}
-          <div class="tooltip-header">Requirements</div>
+          <div class="tooltip-header">基础要求</div>
           <div class="tooltip-content"><pre>{{:potential.join('<br/>')}}</pre></div>
       {{/if}}
       {{if prerequisites.length > 1}}
-          <div class="tooltip-header">Required Technologies</div>
+          <div class="tooltip-header">前置科技</div>
           <div class="tooltip-content prerequisites">
           {{for prerequisites}}
               <img class="left {{:}}" height="52" width="52" src="//:0" data-src="../assets/img/{{:}}.png"">
@@ -100,7 +100,7 @@
           </div>
       {{/if}}
       {{if feature_unlocks.length > 0}}
-          <div class="tooltip-header">Research Effects</div>
+          <div class="tooltip-header">研究成果</div>
           <div class="tooltip-content">{{:feature_unlocks.join('<br/>')}}</div>
       {{/if}}
       </div>
